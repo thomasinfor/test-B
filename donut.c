@@ -10,6 +10,7 @@ int main() {
     hide_cursor() ;
 
     for(;;) {
+        reset_values() ;
         for (float theta=0; theta < 2*pi; theta += dtheta) {
             for(float phi=0; phi < 2*pi; phi += dphi) {
                 coordinate pos = get_projection(theta, phi, A, B) ;
