@@ -10,6 +10,13 @@ int main() {
     hide_cursor() ;
 
     for(;;) {
+        for (float theta=0; theta < 2*pi; theta += dtheta) {
+            for(float phi=0; phi < 2*pi; phi += dphi) {
+                coordinate pos = get_projection(theta, phi, A, B) ;
+                float L = get_luminance(theta, phi, A, B) ;
+                get_output(L, pos) ;
+            }
+        }
         reset_cursor() ;
         print_screen(A, B) ;
 

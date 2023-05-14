@@ -22,5 +22,16 @@ void reset_cursor() {
     printf("\x1b[H");
 }
 
+coordinate get_projection(float theta, float phi, float A, float B) {
+    return (coordinate){ .x=0, .y=0, .z=0 };
+}
+
+float get_luminance(float theta, float phi, float A, float B) {
+    return 0;
+}
+
+void get_output(float L, coordinate pos) {
+}
 
 #endif
+
