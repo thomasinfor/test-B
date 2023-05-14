@@ -10,8 +10,8 @@ void clear_screen() {
     printf("\x1b[2J");
 }
 
-void print_screen() {
-    printf("print_screen\n");
+void print_screen(float A, float B) {
+    printf("print_screen %f %f\n", A, B);
 }
 
 void hide_cursor() {
