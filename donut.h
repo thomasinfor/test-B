@@ -12,6 +12,11 @@ const float dphi   = 0.02 ;
 const float omega_A = 0.07;
 const float omega_B = 0.04;
 
+const float R1 = 1 ;
+const float R2 = 2 ;
+const float donut_distance = 5 ;
+const float render_distance = width*donut_distance*3/(8*(R1+R2));
+
 typedef struct Tcoordinate {
     int x ;
     int y ; 
